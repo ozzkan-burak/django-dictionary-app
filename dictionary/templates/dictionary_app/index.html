@@ -1,0 +1,91 @@
+{% extends '../base.html' %}
+
+{% block content %}
+  <div class="container my-5">
+    <h1 class="text-center text-muted">
+      Mooddle (the Django Dictionary)
+    </h1>
+    <div class="row mt-5">
+      <div class="col-md-2">
+
+      </div>
+      <div class="col-md-8">
+        <form action="" method="post">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon3">Search word</span>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" />
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="button">Search</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row mt-4 text-center">
+      <div class="col-md-3">
+        
+      </div>
+      <div class="col-md-6">
+        <div class="container word_box">
+          <h3 class="mb-2">
+            <u>Word of the day</u>
+          </h3>
+          <h4 class="mb-2">
+            Word
+          </h4>
+          <p class="mb-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates, illo voluptatem sed possimus recusandae consectetur rem.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-2">
+
+      </div>
+      <div class="col-md-8">
+        <h2>
+          Search result
+        </h2>
+        <div class="col-md-6 d-flex justify-content-between align-items-center mt-3">
+          <h5>
+            Word
+          </h5>
+          <div class="pronounciation">
+            <h6>
+              Pronounciation
+            </h6>
+          </div>
+        </div>
+        <div class="definitions mt-5">
+            <h6>
+              Definition:
+            </h6>
+            <p class="">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="example mx-5">
+          <h6>
+            Examples
+          </h6>
+          <p>
+            <div> Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-10 mt-3">
+            <h6>
+              Synonyms:
+            </h6>
+            <div class="d-flex align-items-center">
+              <button class="btn btn-secondary mx-2">Test</button>
+              <button class="btn btn-secondary mx-2">Test</button>
+              <button class="btn btn-secondary mx-2">Test</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock content %}
